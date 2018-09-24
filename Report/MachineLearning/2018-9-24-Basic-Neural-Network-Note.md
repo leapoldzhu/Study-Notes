@@ -33,11 +33,11 @@ last_modified_at: 2018-09-18T11:05:52-05:00
 ### Machine Learning
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/MachineLearning/MLField.jpg" width="80%" alt="MLField">    
+<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/MachineLearning/MLField.jpg" width="80%" alt="MLField">    
 </div>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/MachineLearning/MLField_Types.jpg" width="80%" alt="MLField_Types">    
+<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/MachineLearning/MLField_Types.jpg" width="80%" alt="MLField_Types">    
 </div>
 
 ### Deep Learning
@@ -78,7 +78,7 @@ Image here
 - Stride
 - Padding
 
-![Convolution_0](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_0.jpg
+![Convolution_0](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_0.jpg
 "Convolution_0")
 
 To understand convolution operation, we denote pixel in image at line i, column j as $ x_{i,j} $, element in filter at line $ m $, column $ n $ as $ w_{m,n} $ and use $ w_b $ to represent bias. Then we denote pixel in Feature map at line $ i $, row $ j $ as $ a_{i,j} $. Then we could get follow formulation:
@@ -91,29 +91,29 @@ $$ a_{i,j}=\sum_{d=0}^D \sum_{m = 0}^{F-1} \sum_{n = 0}^{F-1}(w_{d,m,n}x_{d,i+m,
 
 After one step:
 
-![Convolution_1](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_1.jpg "Convolution_1")
+![Convolution_1](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_1.jpg)
 
 After two steps:
 
-![Convolution_2](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_2.jpg "Convolution_2")
+![Convolution_2](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_2.jpg)
 
 Now, we use a gif to show the process
 
-![Convolution](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution.gif "Convolution")
+![Convolution](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution.gif "Convolution")
 
 If we set convolution stride as 2, then we'll go through following process:
 
-![Convolution_stride2-1](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_strid2_1.jpg "Convolution_stride2-1")
+![Convolution_stride2-1](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_strid2_1.jpg "Convolution_stride2-1")
 
-![Convolution_stride2-2](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_strid2_2.jpg "Convolution_stride2-2")
+![Convolution_stride2-2](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_strid2_2.jpg "Convolution_stride2-2")
 
-![Convolution_stride2-3](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_strid2_3.jpg "Convolution_stride2-3")
+![Convolution_stride2-3](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_strid2_3.jpg "Convolution_stride2-3")
 
-![Convolution_stride2-4](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_strid2_4.jpg "Convolution_stride2-4")
+![Convolution_stride2-4](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_strid2_4.jpg "Convolution_stride2-4")
 
 As for padding operation, it means add aditional zeros around the picture, which always used to make sure output size is a determined number. We'll take follow gif for intutive understanding.
 
-![Convolution_Bias_multiFilter](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Convolution/Convolution_Bias_multiFilter.gif
+![Convolution_Bias_multiFilter](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/Convolution_Bias_multiFilter.gif
  "Convolution_Bias_multiFilter")
 
 Naturally, we can find relationship between output size, input size, filter size and stride:
@@ -131,8 +131,8 @@ Use a nonlinear function, effect on the result of convolution, which is linear t
   $$ \sigma(x)=\frac{1}{1+e^{-x}} $$
 
   <div align="center">
-<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Activation%20function/sigmoid.png" alt="Sigmoid">    
-</div>
+<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Activation%20function/sigmoid.png" alt="Sigmoid">    
+  </div>
   
   \+ From probability, used to be popular
   
@@ -145,8 +145,8 @@ Use a nonlinear function, effect on the result of convolution, which is linear t
   $$ tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^x-e^{-x}}{e^x+e^{-x}} $$
   
   <div align="center">
-<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Activation%20function/tanh.png" alt="tanh">    
-</div>
+<img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Activation%20function/tanh.png" alt="tanh">    
+  </div>
   
   \+ Output in (-1, 1)
   
@@ -159,8 +159,8 @@ Use a nonlinear function, effect on the result of convolution, which is linear t
   $$ f(x) = max(0,x) $$
   
   <div align="center">
-    <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Activation%20function/ReLU.png" alt="ReLU">    
-</div>
+    <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Activation%20function/ReLU.png" alt="ReLU">    
+  </div>
   
   \+ Won't cause 'Gradient vanishment' when input is positive
   
@@ -175,8 +175,8 @@ Use a nonlinear function, effect on the result of convolution, which is linear t
   $$ f(x)=\left\{ \begin{aligned} &x &, & x>0 \\ \alpha(e^x&-1) & , & x\leq 0 \end{aligned} \right. $$
   
   <div align="center">
-    <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Activation%20function/ELU.png" alt="ELU">    
-</div>
+    <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Activation%20function/ELU.png" alt="ELU">    
+  </div>
   
   \+ When input is negtive, still have output
   
@@ -189,8 +189,8 @@ Use a nonlinear function, effect on the result of convolution, which is linear t
   $$ f(x)= max(\alpha x, x) $$
   
   <div align="center">
-    <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Activation%20function/PReLU.png" alt="PReLU">    
-</div>
+    <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Activation%20function/PReLU.png" alt="PReLU">    
+  </div>
   
   \+ There's a small gradient in negtive area
   
@@ -215,12 +215,12 @@ In addition of above function, pooling usually used to keep some invarience attr
 
   The elements in feature map are randomly selected according to their probability size, which computed by their value.
  
-![Pooling_schematic](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Pooling/Pooling_schematic.gif){:width="80%"}
+![Pooling_schematic](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Pooling/Pooling_schematic.gif){:width="80%"}
   
 Pooling usually used in Object Recognition problem, which won't affect the result a lot even with some information loss, but not in task such as Super Resolution, when we want to retain information as far as possible. 
 
 ### Fully Connect
-![FC](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/FullyConnect/FullyConnect-1.jpg "FC")
+![FC](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/FullyConnect/FullyConnect-1.jpg "FC")
 
 When we just want to find the feature and don't care where it is, we need fully connect to help us ignore the space structure. It's realized by convolution, can be seen as a convolution layer. Since it ignore the space structure, it doesn't fit in some tasks such like segmentation.
 
@@ -245,7 +245,7 @@ The loss function quantifies the amount by which the prediction deviates from th
 
 - Regularization
 
-  We may come into some [problems](#problems) when we try to train our model with a particular optimization algorithmn.
+  We may come into some [problems](#problems) when we try to train our model with a particular optimization algorithmn. In this situation, if you are facing overfitting problem, you may want to enhance the generalization ability of your network. It's wise to take a $ L_1 $ or $ L_2 $ norm on your parameters.
 
 ### Optimization
 *This part is based on [An Overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/) which I highly recommend.*
@@ -285,7 +285,7 @@ Next, we'll take a look at three variants of Gradient descendent, which differ i
   
   SGD algorithm avoid some similar gradient updates when dataset is large, so it could be much faster. Meanwhile, SGD performs frequent updates with a high variance that may cause the objective function to fluctuate heavily. 
   
-  ![sgd_fluctuation](https://raw.githubusercontent.com/leapoldzhu/Study-Note/master/Report/MachineLearning/img/Optimization/sgd_fluctuation.png "sgd_fluctuation")
+  ![sgd_fluctuation](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Optimization/sgd_fluctuation.png "sgd_fluctuation")
   
   While batch gradient descent converges to the minimum of the basin the parameters are placed in, SGD's fluctuation, on the one hand, enables it to jump to new and potentially better local minima. On the other hand, this ultimately complicates convergence to the exact minimum, as SGD will keep overshooting. However, it has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behaviour as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively. 
   
@@ -319,7 +319,10 @@ PS: We won't discuss algorithms that are infeasible to compute in practice for h
 
   SGD has trouble navigating ravines, i.e. areas where the surface curves much more steeply in one dimension than in another, which are common around local optima. In these scenarios, SGD oscillates across the slopes of the ravine while only making hesitant progress along the bottom towards the local optimum as in left image.
   
-  **IMAGE HERE**;        **IMAGE HERE**
+  <div align="center">
+  <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Optimization/without_momentum.gif" width="80%" alt="without_momentum"> 
+  <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Optimization/with_momentum.gif" width="80%" alt="with_momentum">
+  </div>
   
   Momentum is a method that helps accelerate SGD in the relevant direction and dampens oscillations as can be seen in right image. It does this by adding a fraction γ of the update vector of the past time step to the current update vector:
   
@@ -333,11 +336,15 @@ PS: We won't discuss algorithms that are infeasible to compute in practice for h
 
   Since for Momentum method, it will definite take a step of $ \lambda v_{i-1} $, so it decide to take this variation first, then upgrade gradient at that point. Thus we'll get following formula:
   
-  $$ v_i = \lambda v_{i-1} + \eta \nabla_\theta^{(j-1)} J(\theta^{(j-1)} - \lambda v_{i-1}), where v_0 = \eta \nabla_\theta J(\theta_^{(0)}) $$
+  $$ v_i=\lambda v_{i-1}+\eta\nabla_\theta^{(j-1)} J(\theta^{(j-1)}-\lambda v_{i-1}) $$
   
   $$ \theta^{(j)} = \theta^{(j - 1)} - v_i $$
   
   While Momentum first computes the current gradient (small blue vector in Image 4) and then takes a big jump in the direction of the updated accumulated gradient (big blue vector), NAG first makes a big jump in the direction of the previous accumulated gradient (brown vector), measures the gradient and then makes a correction (red vector), which results in the complete NAG update (green vector). This anticipatory update prevents us from going too fast and results in increased responsiveness, which has significantly increased the performance of RNNs on a number of tasks.
+  
+  <div align="center">
+  <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Optimization/nesterov_update_vector.png" width="80%" alt="nesterov_update_vector"> 
+  </div>
   
   Now that we are able to adapt our updates to the slope of our error function and speed up SGD in turn, we would also like to adapt our updates to each individual parameter to perform larger or smaller updates depending on their importance.
   
@@ -347,7 +354,7 @@ PS: We won't discuss algorithms that are infeasible to compute in practice for h
 
   Previously, we performed an update for all parameters $ \theta^{(j)} $ at once as every parameter $ \theta_i^{(j)} $ used the same learning rate $ \eta $. Adagrad uses a different learning rate for every parameter $ \theta_i^{(j)} $ at every time step $ j $, we first show Adagrad's per-parameter update, which we then vectorize. For brevity, we use $ g^{(j)} $ to denote the gradient at time step $ j $. $ g_i^{(j)} $ is then the partial derivative of the objective function w.r.t. to the parameter $ \theta_i^{(j)} $ at time step $ j $:
 
-  $$ g_i^{(j)} = \nabla_\theta^{(j)} J(\theta_i^{(j)}} $$
+  $$ g_i^{(j)} = \nabla_\theta^{(j)} J(\theta_i^{(j)}) $$
 
   The SGD update for every parameter $ \theta_i $ at each time step $ j $ then becomes:
 
@@ -369,16 +376,26 @@ PS: We won't discuss algorithms that are infeasible to compute in practice for h
 
 **For more Information about Gradient Descendent, i.e. More methods, Choose suitable optimizer, check [here](http://ruder.io/optimizing-gradient-descent/)**
 
-**IMAGE HERE** **IMAGE HERE**
-
-### Normalization
-May delete
+<div align="center">
+  <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Optimization/contours_evaluation_optimizers.gif" width="80%" alt="contours_evaluation_optimizers"> 
+  <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Optimization/saddle_point_evaluation_optimizers.gif" width="80%" alt="saddle_point_evaluation_optimizers">
+</div>
 
 ### Problems
+
+Machine Learning doesn't mean a automatic way to performe your job, during processing, there's still many problems ought to be solved. We'll take two main problems in ML filed as a brief introduction and also some tips may help solving them.
+
 #### Overfitting and underfitting
+
+If you get a bad result for your experiment, you may think it's because you have a overfitting model that fit training data too well. Hold on a second, before you change your hyperparameters, I really recommend you take a look at the performance on training data, it seems not easy to get a hundred percent accuracy on your training set with CNN.
+
+  <div align="center">
+  <img src="https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Problems/Overfitting_Underfitting.png" width="80%" alt="nesterov_update_vector"> 
+  </div>
+
 #### Gradient Explosion and vanishment
 
-然后，由上一节的反向传播算法可知，算法过程中计算误差项时每一层都要乘以本层激活函数的导数，因此，会发生很多次的导数连乘。如果激活函数的导数的绝对值小于1，多次连乘之后误差项很快会衰减到接近于0；而参数的梯度值由误差项计算得到，从而导致前面层的权重梯度接近于0，参数不能得到有效更新，这称为“梯度消失”问题。与之相反，如果激活函数导数的绝对值大于1，多次连乘后权重值会趋向于非常大的数，这称为“梯度爆炸”。长期以来，这两个问题一直困扰神经网络层次无法变得很深。
+This maybe the biggest question in CNN method. As we see in backpropagation of gradient descent, caused by series of chain rule and some activation function(i.e. Sigmoid function), the gradient of weights in different layers drop dramaticlly, which could soon approach zero, make it's impossible to upgrade parameters in former layers, a.k.a. gradient vanishment. On the contrary, if your absolute value of activation function is greater than 1, it may lead to a huge number after several multiply, which called gradient explosion.
 
 ## 3 Realization
 CNN codes today are based on deep learning framework, such as list below:
@@ -389,136 +406,7 @@ CNN codes today are based on deep learning framework, such as list below:
 - [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 - [Theano](https://github.com/Theano/Theano)
 
-What we do is build our own structure, base on exist basic components offered by these frameworks and tune hyperparameters(learning rate, momentum, etc.) to make the best performance of out network. Different framework may base on different languages, released by different companies and always have it's own advantages. , their operation such as convolution will get same result. We take SRCNN as an example, which use matlab to clean data and mainly based on Caffe to train the model:
-
-  ```
-  name: "SRCNN"
-  layer {
-    name: "data"
-    type: "HDF5Data"
-    top: "data"
-    top: "label"
-    hdf5_data_param {
-      source: "examples/SRCNN/train.txt"
-      batch_size: 128
-    }
-    include: { phase: TRAIN }
-  }
-  layer {
-    name: "data"
-    type: "HDF5Data"
-    top: "data"
-    top: "label"
-    hdf5_data_param {
-      source: "examples/SRCNN/test.txt"
-      batch_size: 2
-    }
-    include: { phase: TEST }
-  }
-
-  layer {
-    name: "conv1"
-    type: "Convolution"
-    bottom: "data"
-    top: "conv1"
-    param {
-      lr_mult: 1
-    }
-    param {
-      lr_mult: 0.1
-    }
-    convolution_param {
-      num_output: 64
-      kernel_size: 9
-      stride: 1
-      pad: 0
-      weight_filler {
-        type: "gaussian"
-        std: 0.001
-      }
-      bias_filler {
-        type: "constant"
-        value: 0
-      }
-    }
-  }
-
-  layer {
-    name: "relu1"
-    type: "ReLU"
-    bottom: "conv1"
-    top: "conv1"
-  }
-
-  layer {
-    name: "conv2"
-    type: "Convolution"
-    bottom: "conv1"
-    top: "conv2"
-    param {
-      lr_mult: 1
-    }
-    param {
-      lr_mult: 0.1
-    }
-    convolution_param {
-      num_output: 32
-      kernel_size: 1
-      stride: 1
-      pad: 0
-      weight_filler {
-        type: "gaussian"
-        std: 0.001
-      }
-      bias_filler {
-        type: "constant"
-        value: 0
-      }
-    }
-  }
-
-  layer {
-    name: "relu2"
-    type: "ReLU"
-    bottom: "conv2"
-    top: "conv2"
-  }
-
-  layer {
-    name: "conv3"
-    type: "Convolution"
-    bottom: "conv2"
-    top: "conv3"
-    param {
-      lr_mult: 0.1
-    }
-    param {
-      lr_mult: 0.1
-    }
-    convolution_param {
-      num_output: 1
-      kernel_size: 5
-      stride: 1
-      pad: 0
-      weight_filler {
-        type: "gaussian"
-        std: 0.001
-      }
-      bias_filler {
-        type: "constant"
-        value: 0
-      }
-    }
-  }
-
-  layer {
-    name: "loss"
-    type: "EuclideanLoss"
-    bottom: "conv3"
-    bottom: "label"
-    top: "loss"
-  }
-  ```
+What we do is build our own structure, base on exist basic components offered by these frameworks and tune hyperparameters(learning rate, momentum, etc.) to make the best performance of out network. Different framework may base on different languages, released by different companies and always have it's own advantages. , their operation such as convolution will get same result. We take SRCNN as an example, which use matlab to clean data and mainly based on Caffe to train the model: [Code](LINK HERE)
 
 # Reference
 - Introduction
@@ -552,6 +440,8 @@ What we do is build our own structure, base on exist basic components offered by
   - [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
   
   - [An Overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
+  
+  = [详解机器学习中的梯度消失、爆炸原因及其解决方法](https://blog.csdn.net/qq_25737169/article/details/78847691)
   
 - Realization
   - [深度学习框架汇总](https://blog.csdn.net/wzz18191171661/article/details/70313426)
