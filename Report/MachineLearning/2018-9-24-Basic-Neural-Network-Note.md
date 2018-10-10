@@ -69,7 +69,7 @@ See also, [VGGNet](https://arxiv.org/pdf/1409.1556.pdf), [Dropout](https://arxiv
 
 ## 2 Convolutional Neural Network
 
-Image here
+![CNN_Example](https://raw.githubusercontent.com/leapoldzhu/Study-Notes/master/Report/MachineLearning/img/Convolution/CNN_example.jpg "CNN_Example")
 
 ### Convolution
 - Input size
